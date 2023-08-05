@@ -62,6 +62,7 @@
   left: 475px;
   font-family:monospace;
   font-size: 25px;
+  transition: top;
 }
 .ivy-buy{
   position: absolute;
@@ -80,6 +81,15 @@
 .ivy-buy:hover{
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
   opacity: .6;
+}
+.ivy-up{
+  position: relative;
+  top: -130px;
+  left:-10px;
+  transition: top .5s;                                                 
+}
+.ivy-up:hover{
+  top:-150px;
 }
 
 .g7{
@@ -114,6 +124,15 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
   opacity: .6;
 }
+.g7-up{
+  position: relative;
+  top:-130px;
+  left: -10px;
+  transition: top .5s;
+}
+.g7-up:hover{
+  top:-150px;
+}
 
 .g7iii{
   width: 382px;
@@ -147,6 +166,16 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
   opacity: .6;
 }
+.g7iii-up{
+  position: relative;
+  top:-130px;
+  left: -10px;
+  transition: top .5s;
+}
+.g7iii-up:hover{
+  top:-150px;
+}
+
 
 
 
@@ -182,6 +211,15 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
   opacity: .6;
 }
+.r5-up{
+  position: relative;
+  top:-130px;
+  left: -10px;
+  transition: top .5s;
+}
+.r5-up:hover{
+  top:-150px;
+}
 
 .r5c{
   width: 382px;
@@ -215,6 +253,15 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
   opacity: .6;
 }
+.r5c-up{
+  position: relative;
+  top:-130px;
+  left: -10px;
+  transition: top .5s;
+}
+.r5c-up:hover{
+  top:-150px;
+}
 
 .r100{
   width: 382px;
@@ -247,6 +294,15 @@
 .r100-buy:hover{
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
   opacity: .6;
+}
+.r100-up{
+  position: relative;
+  top:-130px;
+  left: -10px;
+  transition: top .5s;
+}
+.r100-up:hover{
+  top:-150px;
 }
 
 
@@ -284,6 +340,15 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
   opacity: .6;
 }
+.r10-up{
+  position: relative;
+  top:-130px;
+  left: -10px;
+  transition: top .5s;
+}
+.r10-up:hover{
+  top:-150px;
+}
 
 .RP{
   width: 382px;
@@ -317,6 +382,15 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
   opacity: .6;
 }
+.RP-up{
+  position: relative;
+  top:-130px;
+  left: -10px;
+  transition: top .5s;
+}
+.RP-up:hover{
+  top:-150px;
+}
 
 .R{
   width: 382px;
@@ -349,4 +423,13 @@
 .R-buy:hover{
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
   opacity: .6;
+}
+.R-up{
+  position: relative;
+  top:-130px;
+  left: -10px;
+  transition: top .5s;
+}
+.R-up:hover{
+  top:-150px;
 }
