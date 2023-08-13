@@ -20,6 +20,7 @@ body{
   position:absolute;
   left:0px;
   top:150px;
+  max-width:100%;
 }
 .ban-text{
   position:absolute;
