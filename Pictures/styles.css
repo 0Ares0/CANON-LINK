@@ -1,0 +1,157 @@
+.cnon{
+  position:static;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+
+.search-bar{
+  position:static;
+  font-size: 20px;
+  padding-left: 10px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  cursor:pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
+  transition: box-shadow .15s;
+}
+.search-bar:hover{
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .6);
+}
+
+.banner{
+  position: absolute; /* Change to relative positioning */
+  width: 100%;
+  text-align: center;
+  top:0px;
+  left:0px;
+}
+.ban-text{
+  position: absolute; /* Change to absolute positioning */
+  top: 22%; /* Position the top edge at the vertical center */
+  left: 50%; /* Position the left edge at the horizontal center */
+  transform: translate(-50%, -50%); /* Center the element both horizontally and vertically */
+  border: red;
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  transition: color 0.2s, background-color 0.2s;
+}
+.ban-text:hover{
+  border-style: solid;
+  border-width: 2px;
+  color:red;
+  background-color: white;
+}
+
+
+.featured{
+  position:static;
+  font-style: normal;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding-top: 290px;
+  padding-bottom: 20px;
+}
+
+
+
+.page-div {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.ivy-div,
+.g7-div,
+.g7iii-div,
+.r5-div,
+.r5c-div,
+.r100-div {
+  position: static;
+  display: inline-block;
+  padding: 20px;
+}
+
+.ivy-up,
+.g7-up,
+.g7iii-up,
+.r5-up,
+.r5c-up,
+.r100-up {
+  transition: transform 0.5s; /* Add top transition */
+}
+
+.ivy-up:hover,
+.g7-up:hover,
+.g7iii-up:hover,
+.r5-up:hover,
+.r5c-up:hover,
+.r100-up:hover,
+.r10-up:hover,
+.RP-up:hover,
+.R-up:hover,
+.r6-up:hover,
+.m4-up:hover,
+.m424-up:hover {
+  transform: translateY(-20px);
+}
+
+/* Retain the dimensions information */
+
+.ivy,
+.g7,
+.g7iii,
+.r5,
+.r5c,
+.r100 {
+  width: 382px;
+  border-radius: 10px;
+  transition: transform 0.5s; /* Add transition */
+}
+
+.ivy-name,
+.g7-name,
+.g7iii-name,
+.r5-name,
+.r5c-name,
+.r100-name {
+  font-family: monospace;
+  font-size: 25px;
+  text-align: center;
+  transition: transform 0.5s; /* Add transition */
+}
+
+.ivy-buy,
+.g7-buy,
+.g7iii-buy,
+.r5-buy,
+.r5c-buy,
+.r100-buy {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  height: 40px;
+  width: 382px;
+  transition: box-shadow 0.2s, opacity 0.2s;
+}
+
+.ivy-buy:hover,
+.g7-buy:hover,
+.g7iii-buy:hover,
+.r5-buy:hover,
+.r5c-buy:hover,
+.r100-buy:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.6;
+  transition: box-shadow 0.2s, opacity 0.2s;
+}
