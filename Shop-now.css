@@ -1,0 +1,70 @@
+.banner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+}
+
+.shop {
+  position: static;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding: 60px;
+  
+}
+
+/* Common styling for button elements */
+.camera,
+.lenses,
+.video,
+.printers,
+.lighting,
+.drones,
+.accessories {
+  position: static;
+  width: 400px;
+  height: 70px;
+  border: none;
+  color: white;
+  background-color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  transition: color 0.5s, background-color 0.5s;
+  text-align: center; /* Center the text horizontally */
+}
+
+.camera:hover,
+.lenses:hover,
+.video:hover,
+.printers:hover,
+.lighting:hover,
+.drones:hover,
+.accessories:hover {
+  border-width: 3px;
+  border-style: solid;
+  border-color: red;
+  color: red;
+  background-color: white;
+}
+
+
+.len,
+.vid,
+.pri,
+.lig,
+.dro,
+.acc{
+  padding: 5px;
+}
+.cam{
+  padding-bottom: 20px;
+}
+
+
+.page-div{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 230px;
+}
