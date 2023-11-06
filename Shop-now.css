@@ -18,9 +18,7 @@
 .camera,
 .lenses,
 .video,
-.printers,
 .lighting,
-.drones,
 .accessories {
   position: static;
   width: 400px;
@@ -37,9 +35,7 @@
 .camera:hover,
 .lenses:hover,
 .video:hover,
-.printers:hover,
 .lighting:hover,
-.drones:hover,
 .accessories:hover {
   border-width: 3px;
   border-style: solid;
@@ -51,9 +47,7 @@
 
 .len,
 .vid,
-.pri,
 .lig,
-.dro,
 .acc{
   padding: 5px;
 }

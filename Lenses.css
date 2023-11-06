@@ -1,0 +1,131 @@
+.banner {
+    position: absolute; /* Change to relative positioning */
+    width: 100%;
+    text-align: center;
+    top:0px;
+    left:0px;
+  }
+  
+  .shop {
+    position:static;
+    font-style: normal;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-top: 290px;
+    padding-bottom: 20px;
+  }
+  
+  .page-div {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .EF16-35-div,
+  .EF24-div,
+  .RF15-35-div,
+  .RF24-70-div,
+  .RF28-70-div,
+  .RF50-div,
+  .RF70-200-div,
+  .RF100-500-div,
+  .RF85-div{
+    position: static;
+    display: inline-block;
+    padding: 20px;
+    
+  }
+  
+  .EF16-35-up,
+  .EF24-up,
+  .RF15-35-up,
+  .RF24-70-up,
+  .RF28-70-up,
+  .RF50-up,
+  .RF70-200-up,
+  .RF100-500-up,
+  .RF85-up{
+    transition: transform 0.5s; /* Add top transition */
+  }
+  
+  .EF16-35-up:hover,
+  .EF24-up:hover,
+  .RF15-35-up:hover,
+  .RF24-70-up:hover,
+  .RF28-70-up:hover,
+  .RF50-up:hover,
+  .RF70-200-up:hover,
+  .RF100-500-up:hover,
+  .RF85-up:hover{
+    transform: translateY(-20px);
+  }
+  
+  /* Retain the dimensions information */
+  
+  .EF16-35,
+  .EF24,
+  .RF15-35,
+  .RF24-70,
+  .RF28-70,
+  .RF50,
+  .RF70-200,
+  .RF100-500,
+  .RF85{
+    width: 382px;
+    border-radius: 10px;
+    transition: transform 0.5s; /* Add transition */
+  }
+  
+  .EF16-35-name,
+  .EF24-name,
+  .RF15-35-name,
+  .RF24-70-name,
+  .RF28-70-name,
+  .RF50-name,
+  .RF70-200-name,
+  .RF100-500-name,
+  .RF85-name{
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    transition: transform 0.5s; /* Add transition */
+  }
+  
+  .EF16-35-buy,
+  .EF24-buy,
+  .RF15-35-buy,
+  .RF24-70-buy,
+  .RF28-70-buy,
+  .RF50-buy,
+  .RF70-200-buy,
+  .RF100-500-buy,
+  .RF85-buy{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 382px;
+    transition: box-shadow 0.2s, opacity 0.2s;
+  }
+  
+  .EF16-35-buy:hover,
+  .EF24-buy:hover,
+  .RF15-35-buy:hover,
+  .RF24-70-buy:hover,
+  .RF28-70-buy:hover,
+  .RF50-buy:hover,
+  .RF70-200-buy:hover,
+  .RF100-500-buy:hover,
+  .RF85-buy:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.6;
+    transition: box-shadow 0.2s, opacity 0.2s;
+  }
+  
+  

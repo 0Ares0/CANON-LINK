@@ -60,13 +60,16 @@
 
 
 .page-div {
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 30px;
-  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  grid-gap: -900px; /* Add gap between columns and rows */
+  padding: 20px;
   text-align: center;
+  justify-content: center; /* Horizontally center grid within the parent */
+  align-items: center; /* Vertically center grid within the parent */
+  margin: auto;
 }
+
 
 .ivy-div,
 .g7-div,
@@ -77,6 +80,8 @@
   position: static;
   display: inline-block;
   padding: 20px;
+  padding-left: -200px;
+  padding-right: -200px;
 }
 
 .ivy-up,
@@ -154,4 +159,11 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   opacity: 0.6;
   transition: box-shadow 0.2s, opacity 0.2s;
+}
+
+.scroll {
+  position: absolute;
+  width: 100%; /* Set the width to cover the entire screen */
+  height: auto; /* Allows the image to scale proportionally */
+  left: 0px;
 }
