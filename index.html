@@ -3,7 +3,7 @@
 
   <head>
     <meta charset = "UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title> CANONL LINK</title>
     <link rel = "stylesheet" href = "styles.css">
   </head>
@@ -13,8 +13,9 @@
       <a href="shop-now.html"><button class = "ban-text"> SHOP NOW </button></a>
 
       <center>
-        <h2 class = "featured"> FEATURED PRODUCTS</h2>
-        <input class = "search-bar" type = "text" placeholder = "Search">
+        <h2 class="featured">FEATURED PRODUCTS</h2>
+        <input class="search-bar" type="text" placeholder="Search" id="searchInput">
+        <button class="search-button" onclick="searchProducts()">Search</button>
       </center>
 
       <div class="page-div">
@@ -69,9 +70,27 @@
           <a href="https://www.bhphotovideo.com/c/product/1769089-REG/canon_eos_r100_mirrorless_camera.html" target="_blank"> <button Class="r100-buy"> BUY NOW </button> </a>
       </div>
 
-      <div>
-        <!--<img class="scroll" src="Pictures/scroll.jpeg">
-      </div>
+
+      <script>
+        function searchProducts() {
+          // Get the value entered in the search bar
+          var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    
+          // Loop through each product name and check if it contains the search term
+          var productNames = document.querySelectorAll('.ivy-name, .g7-name, .g7iii-name, .r5-name, .r5c-name, .r100-name');
+          for (var i = 0; i < productNames.length; i++) {
+            var productName = productNames[i].innerText.toLowerCase();
+    
+            // Show or hide the product based on whether it matches the search term
+            var productDiv = productNames[i].closest('div');
+            if (productName.includes(searchTerm)) {
+              productDiv.style.display = 'block';
+            } else {
+              productDiv.style.display = 'none';
+            }
+          }
+        }
+      </script>
   </body>
 
 </html>
