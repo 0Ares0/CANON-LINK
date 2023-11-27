@@ -11,7 +11,13 @@
   <body>
     <center>
     <img class="banner" src="Pictures/banner 20000.png" width="1918px">
-    <h1 class="shop"> SHOP LENSES </h1>
+
+    <center>
+      <h2 class="shop"> SHOP LENSES</h2>
+      <input class="search-bar" type="text" placeholder="Search" id="searchInput">
+      <button class="search-button" onclick="searchProducts()">Search</button>
+    </center>
+    
     </center>
 
 
@@ -93,7 +99,27 @@
     </div>
 
   </div>
-    
+  <script>
+    function searchProducts() {
+      // Get the value entered in the search bar
+      var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+      // Loop through each product name and check if it contains the search term
+      var productNames = document.querySelectorAll('.EF16-35-name, .EF24-name, .RF15-35-name, .RF24-70-name, .RF28-70-name, .RF50-name, .RF70-200-name, .RF85-name, .RF100-500-name');
+      for (var i = 0; i < productNames.length; i++) {
+        var productName = productNames[i].innerText.toLowerCase();
+
+        // Show or hide the product based on whether it matches the search term
+        var productDiv = productNames[i].closest('div');
+        if (productName.includes(searchTerm)) {
+          productDiv.style.display = 'block';
+        } else {
+          productDiv.style.display = 'none';
+        }
+      }
+    }
+  </script>
+        
 
   </body>
 </html>
